@@ -54,7 +54,7 @@ console.log(binarySearch(["apple", "banana", "orange"], "banana"));
 // 2. Binary Search
 // 3. Comparison
 
-// 2. Binary Search with asc dsc -> (Condition 1.Sorted)
+// 3. Binary Search with asc dsc -> (Condition 1.Sorted)
 let arr3 = [10, 20, 30, 40, 50, 60, 70, 80];
 
 function binarySearch2(arr, target) {
