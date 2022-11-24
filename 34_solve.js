@@ -2,9 +2,11 @@
 // let arr5 = [1, 3];
 // let arr5 = [1, 4];
 // let arr5 = [3, 3, 3];
-let arr5 = [5, 7, 7, 8, 8, 10];
+// let arr5 = [5, 7, 7, 8, 8, 10];
+let arr5 = [1, 2, 5, 2, 3];
 
 function binarySearch4(arr, target) {
+  arr.sort();
   if (!arr.length) {
     return [-1, -1];
   }
@@ -88,10 +90,11 @@ function binarySearch4(arr, target) {
       end = mid - 1;
     }
   }
-  return [-1, -1];
+  // return [-1, -1];
+  return [];
 }
 
-console.log(binarySearch4(arr5, 7));
+console.log(binarySearch4(arr5, 3));
 
 // ---------------------------------
 
