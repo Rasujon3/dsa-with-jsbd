@@ -8,7 +8,7 @@ function findKthNumber(arr, target) {
   let n = 1;
   let i = 0;
 
-  while (true) {
+  while (missingArray.length < target) {
     if (n == arr[i]) {
       console.log(arr[i]);
       i++;
@@ -21,9 +21,9 @@ function findKthNumber(arr, target) {
       n++;
       console.log(n);
 
-      if (missingArray.length > target) {
-        break;
-      }
+      // if (missingArray.length > target) {
+      //   break;
+      // }
     }
   }
   return missingArray[target - 1];
