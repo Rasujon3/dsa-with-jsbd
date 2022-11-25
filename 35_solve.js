@@ -62,14 +62,6 @@ function binarySearch4(arr, target) {
       return newArray;
     }
 
-    // if (arr[mid] !== target) {
-    //   arr.push(target);
-    //   arr.sort(function (a, b) {
-    //     return a - b;
-    //   });
-    //   return arr;
-    // }
-
     //   update start & end point for control loop
     else if (target > arr[mid]) {
       start = mid + 1;
@@ -78,7 +70,16 @@ function binarySearch4(arr, target) {
     }
   }
   // return [-1, -1];
-  return [];
+  //   return [];
+  arr.push(target);
+  arr.sort(function (a, b) {
+    return a - b;
+  });
+  //   return arr;
+  console.log(arr);
+  console.log(arr[target]);
+  //   return arr[target];
+  return arr.indexOf(target);
 }
 
-console.log(binarySearch4(arr5, 5));
+console.log(binarySearch4(arr5, 7));
