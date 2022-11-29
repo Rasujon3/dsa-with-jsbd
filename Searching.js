@@ -48,6 +48,9 @@ console.log(binarySearch(arr2, 83));
 console.log(binarySearch([25, 20, 15, 12, 10, 5, 2, -2, -4], 10));
 console.log(binarySearch(["apple", "banana", "orange"], "banana"));
 
+// Time complexity: O(log N)
+// Space complexity: O(1) // binary search e kono extra variable use kri nai.
+
 // assignment:
 // Blog:
 // 1. Linear Search
