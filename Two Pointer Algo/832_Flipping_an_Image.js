@@ -1,41 +1,36 @@
 // Given two sorted array & return a merged asc sorted array.
 
-function mergeArrays(arr1, arr2) {
-  let arrLength = arr1.length + arr2.length;
-  let ptr1 = 0;
-  let ptr2 = 0;
+function mergeArrays(image) {
+  console.log(image.length);
 
-  let output = [];
-  for (let i = 0; i < arrLength; i++) {
-    if (arr1[ptr1] <= arr2[ptr2]) {
-      console.log(arr1[ptr1]);
-      console.log(arr2[ptr2]);
-      output.push(arr1[ptr1]);
-      ptr1++;
-    }
-    if (arr2[ptr2] < arr1[ptr1]) {
-      console.log(arr2[ptr2]);
-      console.log(arr1[ptr1]);
-      output.push(arr2[ptr2]);
-      ptr2++;
-    }
-    if ((arr1[ptr1] == undefined || null) && arr2[ptr2]) {
-      console.log(arr1[ptr1]);
-      console.log(arr2[ptr2]);
-      output.push(arr2[ptr2]);
-      ptr2++;
-    }
-    if ((arr2[ptr2] == undefined || null) && arr1[ptr1]) {
-      console.log(arr2[ptr2]);
-      console.log(arr1[ptr1]);
-      output.push(arr2[ptr1]);
-      ptr1++;
+  for (let i = 0; i < image.length; i++) {
+    console.log(image[i]);
+    image[i].reverse();
+    console.log(image[i]);
+    for (let j = 0; j < image[i].length; j++) {
+      console.log(image[i][j]);
+      if (image[i][j] === 0) {
+        image[i][j] = 1;
+      } else if (image[i][j] === 1) {
+        image[i][j] = 0;
+      }
+      console.log(image[i][j]);
     }
   }
-  return output;
+  console.log(image);
+  return image;
 }
 
-let arr1 = [5, 10, 15, 20, 25, 30];
-let arr2 = [15, 23, 25, 30, 35];
+let image = [
+  [1, 1, 0],
+  [1, 0, 1],
+  [0, 0, 0],
+];
 
-console.log(mergeArrays(arr1, arr2));
+/**
+ * [1, 0, 0],
+  [0, 1, 0],
+  [1, 1, 1],
+ */
+
+console.log(mergeArrays(image));
