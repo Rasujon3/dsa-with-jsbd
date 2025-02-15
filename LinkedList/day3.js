@@ -35,7 +35,7 @@ class LinkedList {
     // 3. update tail
     let node = new Node(value);
     this.tail.next = node;
-    this.tail = node;
+    node.prev = this.tail;
     this.tail.next = this.head;
     this.length++;
   }
