@@ -40,7 +40,17 @@ function convert(s, numRows) {
     return result;
 }
 
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
 // Example usage:
 console.log(convert("PAYPALISHIRING", 3)); // Output: "PAHNAPLSIIGYIR"
 console.log(convert("PAYPALISHIRING", 4)); // Output: "PINALSIGYAHRPI"
 console.log(convert("A", 1));              // Output: "A"
+
+/*
+    1. Calculate & set rows
+    2. push 1st value on 1sr row
+    3. Calculate currentRow & isGoingDown
+    4. Finally, join all rows & return.
+ */
